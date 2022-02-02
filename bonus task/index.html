@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>layout task</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles-mobile.css" />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <script src="header-script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <ul class="header__ul">
+            <li class="header__ul-li">
+              <a href="#home" class="header__a">Home</a>
+            </li>
+            <li class="header__ul-li">
+              <a href="#about-me" class="header__a">About me</a>
+            </li>
+            <li class="header__ul-li">
+              <a href="#skills" class="header__a">Skills</a>
+            </li>
+            <li class="header__ul-li">
+              <a href="#portfolio" class="header__a">Portfolio</a>
+            </li>
+            <li class="header__ul-li">
+              <a href="#contacts" class="header__a">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <article class="home" id="home">
+        <div class="home__container">
+          <div class="home__info">
+            <div class="logo">
+              <h2 class="logo__h2">Denis</h2>
+              <h2 class="logo__h2">Novik</h2>
+            </div>
+            <div class="about-short">
+              <p class="about-short__p">UX | UI designer</p>
+              <p class="about-short__p">24 years old, Minsk</p>
+            </div>
+            <div class="switcher">
+              <form class="switcher__form">
+               <input id="ru" class="switcher__button" type="radio" value="ru" name="lang"></input>
+               <label for="ru" class="switcher__button-label">RU</label>
+               <span class="switcher__delimiter">|</span>
+               <input id="eng" class="switcher__button" type="radio" value="eng" name="lang" checked></input>
+               <label for="eng" class="switcher__button-label" type="radio">ENG</label>
+              </form>
+           </div>
+          </div>
+          <img class="home__img" src="./assets/Imgs/BSPP2266.png" alt="photo" />
+          <img class="home__mobile-img" src="./assets/Imgs/BSPP2266-mb.png" alt="photo" />
+        </div>
+      </article>
+      <article class="about-me" id="about-me">
+        <div class="about-me__container">
+          <h2 class="about-me__header">About me</h2>
+          <div class="about-me__p-block">
+            <p class="about-me__p">Hi, I'm Denis – UX/UI designer from <br class="about-me__p--mobile-br"/> Minsk. <br class="about-me__p--br"/>
+            I'm interested in design and <br class="about-me__p--mobile-br"/> everything connected with it.</p>
+          </div>
+          <div class="about-me__p-block">
+            <p class="about-me__p">I'm studying at courses <br class="about-me__p--mobile-br"/> "Web and mobile design <br class="about-me__p--br"/>
+            interfaces" <br class="about-me__p--mobile-br"/> in IT-Academy.</p>
+          </div>
+          <div class="about-me__p-block">
+            <p class="about-me__p">Ready to implement excellent <br class="about-me__p--mobile-br"/> projects <br class="about-me__p--br"/>
+            with wonderful people.</p>
+          </div>
+        </div>
+      </article>
+      <article class="skills" id="skills">
+        <div class="skills__container">
+          <h2 class="skills__header">Skills</h2>
+          <p class="skills__p">I work in such programs as</p>
+          <div class="items-block">
+            <div class="items-block__item">
+              <img class="items-block__img" src="./assets/svg/PS.svg" alt="program-icon" />
+              <div class="items-block__item-name-container">
+                <p class="items-block__item-name">Adobe</p>
+                <p class="items-block__item-name">Photoshop</p>
+              </div>
+              <div class="items-block__rating-container">
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star" alt="star"></div>
+              </div>
+            </div>
+            <div class="items-block__item">
+              <img class="items-block__img" src="./assets/svg/Ai.svg" alt="program-icon" />
+              <div class="items-block__item-name-container">
+                <p class="items-block__item-name">Adobe</p>
+                <p class="items-block__item-name">Illustrator</p>
+              </div>
+              <div class="items-block__rating-container">
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star" alt="star"></div>
+                <div class="items-block__rating-star" alt="star"></div>
+              </div>
+            </div>
+            <div class="items-block__item">
+              <img class="items-block__img" src="./assets/svg/Ae.svg" alt="program-icon" />
+              <div class="items-block__item-name-container">
+                <p class="items-block__item-name">Adobe</p>
+                <p class="items-block__item-name">After Effects</p>
+              </div>
+              <div class="items-block__rating-container">
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star" alt="star"></div>
+              </div>
+            </div>
+            <div class="items-block__item">
+              <img class="items-block__img" src="./assets/svg/Figma.svg" alt="program-icon" />
+              <div class="items-block__item-name-container">
+                <p class="items-block__item-name">Figma</p>
+              </div>
+              <div class="items-block__rating-container">
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star items-block__rating-star--active" alt="star"></div>
+                <div class="items-block__rating-star" alt="star"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio" id="portfolio">
+        <div class="portfolio__container">
+          <h2 class="portfolio__h2">Portfolio</h2>
+          <div class="portfolio__content-block">
+            <img class="portfolio__site-img" src="./assets/Imgs/WMCS.png" alt="site-example"/>
+            <a class="portfolio__site-a" href="#!">Online fashion store - Homepage</a>
+          </div>
+          <div class="portfolio__content-block">
+            <img class="portfolio__site-img" src="./assets/Imgs/Reebok.png" alt="site-example"/>
+            <a class="portfolio__site-a" href="#!">Reebok Store - Concept</a>
+          </div>
+          <div class="portfolio__content-block">
+            <img class="portfolio__site-img" src="./assets/Imgs/Braun.png" alt="site-example"/>
+            <a class="portfolio__site-a" href="#!">Braun Landing Page - Concept</a>
+          </div>
+        </div>
+      </article>
+      <footer class="contacts" id="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__h2">Contacts</h2>
+          <div class="contacts__p-wrapper">
+            <p class="contacts__p">Want to know more or just chat? </p>
+            <p class="contacts__p">You are welcome!</p>
+          </div>
+          <button class="contacts__button">Send message</button>
+          <div class="contacts__social-block">
+            <a href="#!"><img src="./assets/svg/LinkedIn.svg" alt="LinkedIn"></img></a>
+            <a href="#!"><img src="./assets/svg/Instagram.svg" alt="Instagram"></img></a>
+            <a href="#!"><img src="./assets/svg/Behance.svg" alt="Behance"></img></a>
+            <a href="#!"><img src="./assets/svg/Dribble.svg" alt="Dribble"></img></a>
+          </div>
+          <div class="contacts__p-wrapper">
+            <p class="contacts__p contacts__p_tiny-theme">Like me on </p>
+            <p class="contacts__p contacts__p_tiny-theme">LinkedIn, Instagram, Behance, Dribble</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

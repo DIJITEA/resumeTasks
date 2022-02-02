@@ -1,0 +1,43 @@
+
+.home__mobile-img {
+    display: none;
+}
+
+.about-me__p--mobile-br {
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        position: relative;
+        max-width: 316px;
+        margin-top: 68px;
+    }
+    .header__container {
+        display: none;
+    }
+    .home__info {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 37px;
+    }
+    .switcher {
+        display: none;
+    }
+    .home__img {
+        display: none;
+    }
+    .home__mobile-img {
+        display: initial;
+        width: 100%;
+    }
+    .about-me__p--mobile-br {
+        display: initial;
+    }
+    .about-me__p--br {
+        display: none;
+    }
+    .contacts__button {
+        width: 80%;
+    }
+}
